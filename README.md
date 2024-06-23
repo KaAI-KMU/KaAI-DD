@@ -11,15 +11,12 @@ In this demo, the prediction is made after every second. If the prediction is co
 
 ## Dataset Preparation
 
-The dataset used is downloaded from [Brain4cars](https://github.com/asheshjain399/ICCV2015_Brain4Cars).
+The dataset used is downloaded from [KaAI 5s Dataset](https://drive.google.com/drive/u/1/folders/1ry2UwkBsjIKJkzwYr0E1XAaPtWdb7v8b).
+1. You should put the datasets(road_camera, face_camera, Gaze&CAN)folders into annotation_kaai folder that can get from github.
 
-1. Videos are extracted into images with the fps=25 under each directory. The file name format is e.g. "image-0001.png".
+2. We split the dataset using 5-fold cross validaton. Run script ``n_fold_Brain4cars.py`` in directory ``datasets/annotation_kaai`` to split.
 
-   You can use our script ``extract_frames.py`` in ``datasets/annotation`` to extract images: Copy this file to directory of "face_camera", and then run this script.
-
-2. We split the dataset using 5-fold cross validaton. Run script ``n_fold_Brain4cars.py`` in directory ``datasets/annotation`` to split.
-
-   You can use the five ``.csv`` files in ``datasets/annotation`` and skip this step.
+   You can use the five ``.csv`` files in ``datasets/annotation_kaai`` and skip this step.
 
 
 ## Train/Evaluate 3D-ResNet50 with inside videos
