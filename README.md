@@ -1,14 +1,12 @@
 # Driver-Intention-Prediction for KaAI-DD
 A framework to predict driver's maneuver behaviors.
 
-This repository presents a PyTorch implementation of the Driver Intent Prediction model from our paper ["KaAI-DD: Holistic Driving Dataset for Predicting Driver Gaze and Intention"](insert-link-to-your-paper). 
+This repository presents a PyTorch implementation of the Driver Intent Prediction model from our paper ["KaAI-DD: Holistic Driving Dataset for Predicting Driver Gaze and Intention"](insert-link-to-your-paper).
 
-The framework builds upon and adapts techniques from the paper ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf). We have modified the original implementation to allow benchmarking with the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
+Our framework builds on the foundational work of ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf), with significant modifications and enhancements to benchmark performance using the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
 
 ![Driver Intent Prediction Model Architecture](https://github.com/user-attachments/assets/0b041f1e-afc6-480e-ac02-01a4278ca91b)  
 <p align="center"><i>Architecture of our driver intent prediction model</i></p>
-
-In this demo, predictions are made every second. If the prediction is correct, a ✓ appears.
 
 ## Dataset Preparation
 
@@ -26,7 +24,7 @@ To use our dataset with this framework:
 
 ## Train/Evaluate 3D-ResNet50 with Inside Videos
 
-The 3D-ResNet50 network, along with its pretrained model, is sourced from [3D ResNets](https://github.com/kenshohara/3D-ResNets-PyTorch). We express our gratitude to the authors of this project.
+The 3D-ResNet50 network, along with its pretrained model, is adapted from the work in [3D ResNets](https://github.com/kenshohara/3D-ResNets-PyTorch). We express our gratitude to the original authors, and have modified the implementation to better suit our specific dataset and task.
 
 Before running the `run-3DResnet.sh` script, set the following paths:
 
@@ -47,9 +45,9 @@ The model trained using our script is available [here](https://bwstaff-my.sharep
 
 ## Train/Evaluate ConvLSTM with Outside Videos
 
-We used [FlowNet 2.0](https://github.com/NVIDIA/flownet2-pytorch) to extract the optical flow of all outside images. The optical flow images can also be found [here](https://bwstaff-my.sharepoint.com/:f:/g/personal/yao_rong_bwstaff_de/EpmuNb3eB7hPgv2DmeBrQ1ABqgQ6uInXudrpfQQyPgmJZA?e=RimExC).
+We utilized [FlowNet 2.0](https://github.com/NVIDIA/flownet2-pytorch) to extract the optical flow of all outside images, which we then used in our ConvLSTM network. The optical flow images can also be found [here](https://bwstaff-my.sharepoint.com/:f:/g/personal/yao_rong_bwstaff_de/EpmuNb3eB7hPgv2DmeBrQ1ABqgQ6uInXudrpfQQyPgmJZA?e=RimExC).
 
-Our ConvLSTM network is adapted from this [repo](https://github.com/automan000/Convolutional_LSTM_PyTorch). We extend our gratitude to the creators of these projects.
+Our ConvLSTM network is adapted and extended from the work in this [repo](https://github.com/automan000/Convolutional_LSTM_PyTorch). We express our appreciation to the creators of these foundational projects.
 
 Before running the `run-ConvLSTM.sh` script, set the following paths:
 
@@ -63,7 +61,4 @@ Before running the `run-ConvLSTM.sh` script, set the following paths:
 - **`sample_duration`**: Length of input videos (5 frames).
 - **`interval`**: Interval between frames in the input clip (between 5 and 30).
 - **`end_second`**: The time before the maneuver from which frames are input (ranging from 1 to 5 seconds).
-
-## Citation
-
 
