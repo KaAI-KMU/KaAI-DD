@@ -8,6 +8,18 @@ Our framework builds on the foundational work of ["Driver Intention Anticipation
 ![Driver Intent Prediction Model Architecture](https://github.com/user-attachments/assets/0b041f1e-afc6-480e-ac02-01a4278ca91b)  
 <p align="center"><i>Architecture of our driver intent prediction model</i></p>
 
+## Results
+
+| Model          | Dataset                                   | Accuracy (%) |
+|----------------|-------------------------------------------|--------------|
+| Baseline       | Brain4Cars (In-Cabin)                     | 77.40        |
+| Baseline       | Brain4Cars (In-Cabin + Out-Cabin)         | 83.98        |
+| Baseline       | Our Dataset (In-Cabin)                    | 83.65        |
+| Baseline       | Our Dataset (In-Cabin + Out-Cabin)        | 85.85        |
+| Baseline       | Our Dataset (In-Cabin + Out-Cabin)        | 85.70        |
+| **Enhanced**   | **Our Dataset (In-Cabin + Out-Cabin + Gaze)** | **86.85**    |
+
+
 ## Dataset Preparation
 
 We have prepared the KaAI 5s Dataset, which can be downloaded from [this link](https://drive.google.com/drive/folders/1R4jd6eZb6MOGuZ-I4O60faz6FsRx9elY?usp=drive_link). The dataset includes the following components:
