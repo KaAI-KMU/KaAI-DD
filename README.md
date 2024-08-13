@@ -3,7 +3,7 @@ A framework to predict driver's maneuver behaviors.
 
 This repository presents a PyTorch implementation of the Driver Intent Prediction model from our paper ["KaAI-DD: Holistic Driving Dataset for Predicting Driver Gaze and Intention"](insert-link-to-your-paper).
 
-Our framework builds on the foundational work of ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf), with significant modifications and enhancements to benchmark performance using the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
+Our framework builds on the foundational work of ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf), with modifications and enhancements to benchmark performance using the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
 
 ![Driver Intent Prediction Model Architecture](https://github.com/user-attachments/assets/0b041f1e-afc6-480e-ac02-01a4278ca91b)  
 <p align="center"><i>Architecture of our driver intent prediction model</i></p>
