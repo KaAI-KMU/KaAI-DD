@@ -1,10 +1,12 @@
 # Driver-Intention-Prediction for KaAI-DD
 A framework to predict driver's maneuver behaviors.
 
-This repository presents a PyTorch implementation of the Driver Intent Prediction model from our paper ["KaAI-DD: Holistic Driving Dataset for Predicting Driver Gaze and Intention"](insert-link-to-your-paper). The framework builds upon and adapts techniques from the paper ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf). We have modified the original implementation to allow benchmarking with the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
+This repository presents a PyTorch implementation of the Driver Intent Prediction model from our paper ["KaAI-DD: Holistic Driving Dataset for Predicting Driver Gaze and Intention"](insert-link-to-your-paper). 
+
+The framework builds upon and adapts techniques from the paper ["Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring"](https://arxiv.org/pdf/2006.11557.pdf). We have modified the original implementation to allow benchmarking with the KaAI dataset, which we developed. Below, we explain how to test our dataset using this framework.
 
 ![Driver Intent Prediction Model Architecture](https://github.com/user-attachments/assets/0b041f1e-afc6-480e-ac02-01a4278ca91b)
-Architecture of our driver intent prediction model
+                                 Architecture of our driver intent prediction model
 
 In this demo, predictions are made every second. If the prediction is correct, a ✓ appears.
 
@@ -66,14 +68,4 @@ For more details, refer to Section IV.B of the [paper](https://arxiv.org/pdf/200
 
 ## Citation
 
-```
-@INPROCEEDINGS{9294181,
-  author={Rong, Yao and Akata, Zeynep and Kasneci, Enkelejda},
-  booktitle={2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)}, 
-  title={Driver Intention Anticipation Based on In-Cabin and Driving Scene Monitoring}, 
-  year={2020},
-  volume={},
-  number={},
-  pages={1-8},
-  doi={10.1109/ITSC45102.2020.9294181}}
-```
+
