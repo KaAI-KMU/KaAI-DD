@@ -64,8 +64,6 @@ Before running the `run-ConvLSTM.sh` script, set the following paths:
 - **`interval`**: Interval between frames in the input clip (between 5 and 30).
 - **`end_second`**: The time before the maneuver from which frames are input (ranging from 1 to 5 seconds).
 
-For more details, refer to Section IV.B of the [paper](https://arxiv.org/pdf/2006.11557.pdf).
-
 ## Citation
 
 
