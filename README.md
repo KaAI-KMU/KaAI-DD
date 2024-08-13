@@ -12,8 +12,8 @@ Our framework builds on the foundational work of ["Driver Intention Anticipation
 
 | Model          | Dataset                                                                 | Accuracy (%) |
 |----------------|-------------------------------------------------------------------------|--------------|
-| Baseline       | [Brain4Cars (In-Cabin)](https://arxiv.org/pdf/1601.00740)               | 77.40        |
-| Baseline       | [Brain4Cars (In-Cabin + Out-Cabin)](https://arxiv.org/pdf/1601.00740)   | 83.98        |
+| Baseline       | [Brain4Cars](https://arxiv.org/pdf/1601.00740)(In-Cabin)                | 77.40        |
+| Baseline       | [Brain4Cars](https://arxiv.org/pdf/1601.00740)(In-Cabin + Out-Cabin)    | 83.98        |
 | Baseline       | Our Dataset (In-Cabin)                                                  | 83.65        |
 | Baseline       | Our Dataset (In-Cabin + Out-Cabin)                                      | 85.85        |
 | Baseline       | Our Dataset (In-Cabin + Out-Cabin)                                      | 85.70        |
