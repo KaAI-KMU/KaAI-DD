@@ -16,7 +16,6 @@ Our framework builds on the foundational work of ["Driver Intention Anticipation
 | Baseline       | [Brain4Cars](https://arxiv.org/pdf/1601.00740) (In-Cabin + Out-Cabin)   | 83.98        |
 | Baseline       | Our Dataset (In-Cabin)                                                  | 83.65        |
 | Baseline       | Our Dataset (In-Cabin + Out-Cabin)                                      | 85.85        |
-| Baseline       | Our Dataset (In-Cabin + Out-Cabin)                                      | 85.70        |
 | **Enhanced**   | **Our Dataset (In-Cabin + Out-Cabin + Gaze)**                           | **86.85**    |
 
 
